@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>MintBean Project</title>
+  </head>
+  <body class="text-center">
+
+    <h1>[ Your own campain poster in 3 steps ]</h1>
+
+     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 justify-content-center">
+          <div class="card bg-light justify-content-center">
+            <video id="player" width=400 height=300 controls autoplay></video>
+          </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+              <div class="card">
+                <p>1 - Choose a filter:</p>
+                <div class="dropdown">
+                  <select class="dropdown-list" id="filter">
+                    <option value="asis" selected >As is!</option>
+                    <option value="greyscale" >Grey scale</option>
+                    <option value="sepia" >Sepia</option>
+                    <option value="saturate" >Saturate</option>
+                    <option value="lomo" >Lomo</option>
+                  </select>
+                </div>
+                <p>2 - Take your picture (don't forget to smile!):</p>
+                <button class="btn-flat" id="capture" onclick="myFunction()">Capture</button>
+                <p>3 - Choose a slogan</p>
+                <input type="text" id="fname" name="fname">
+              </div>
+          </div>
+      </div>
+
+    <div class="container">
+      <h2>Mobile full-screen, laptop half centered</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <canvas id="canvas" width=400 height=300></canvas>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script  src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
