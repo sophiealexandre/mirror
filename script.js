@@ -37,6 +37,6 @@ function printDocument(poster) {
 
     //Wait until PDF is ready to print
 
-        doc.print();
+        window.print();
 
 }
