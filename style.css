@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body { margin: 0; padding: 0;
+body { margin: 10px; padding: 10px;
       font-family: 'Lato',
       text-align: left;
       font-size: 15px;
@@ -10,8 +10,8 @@ body { margin: 0; padding: 0;
 
 
 h1 {
+  margin: 20px; padding: 10px;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
   color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 55px;
@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
+  margin: 10px; padding: 10px;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
   color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 30px;
@@ -45,7 +45,9 @@ h2 {
   color: white;
 }
 
-
+.card {
+  border: 0px;
+}
 
 .greyscale {
   -webkit-filter: grayscale(1);

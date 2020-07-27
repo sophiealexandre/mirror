@@ -15,8 +15,8 @@
      <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 justify-content-center">
-          <div class="card bg-light justify-content-center">
-            <video id="player" width=400 height=300 controls autoplay></video>
+          <div class="card justify-content-center">
+            <video id="player" width=450 height=300 controls autoplay></video>
           </div>
         </div>
         <div class="col-lg-6">
@@ -35,19 +35,22 @@
                 <p>2 - Take your picture (don't forget to smile!):</p>
                 <button class="btn-flat" id="capture" onclick="myFunction()">Capture</button>
                 <p>3 - Choose a slogan</p>
-                <input type="text" id="fname" name="fname">
+                <div class="search-form-control form-group">
+                  <input class="form-control string required" onkeyup="getValue()" placeholder="I'm looking for this!" type="text" id="in"  />
+                </div>
               </div>
           </div>
       </div>
 
-    <div class="container">
-      <h2>Mobile full-screen, laptop half centered</h2>
+    <div id="divName"  class="container p-5 m-5">
+      <h2 id="demo">My slogan is better than yours!</h2>
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <canvas id="canvas" width=400 height=300></canvas>
         </div>
       </div>
     </div>
+    <button class="btn-flat" onclick="printDocument()">Capture</button>
 
 
 

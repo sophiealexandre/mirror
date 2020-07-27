@@ -25,3 +25,18 @@ function myFunction() {
    console.log(filter)
    element.classList.add(filter);
 }
+function getValue(){
+  var query = document.getElementById('in').value;
+  console.log(query)
+  txt = query
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function printDocument(poster) {
+    var doc = document.getElementById(poster);
+
+    //Wait until PDF is ready to print
+
+        window.print();
+
+}
