@@ -33,6 +33,12 @@ function getValue(){
 }
 
 function printDocument(poster) {
+    var x = document.getElementById("hide");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
     var doc = document.getElementById(poster);
 
     //Wait until PDF is ready to print
