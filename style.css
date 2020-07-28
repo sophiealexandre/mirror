@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body { margin: 10px; padding: 10px;
+body { padding: 30px;
       font-family: 'Lato',
-      text-align: left;
       font-size: 15px;
         color: black;
      }
+
+header{
+
+  background-color: #538083;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
 
 
 h1 {
   margin: 20px; padding: 10px;
   font-family: 'Montserrat', sans-serif;
-  color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -32,15 +39,16 @@ h2 {
 }
 
 
+
 .btn-flat {
-  color: black
+  color: white;
+  background: #538083;
   border: 1px solid #4A4A4A;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
   opacity: 0.9;
   transition: opacity 0.3s ease;
-  background: #048ba8;
 }
 
 .btn-flat:hover {

@@ -18,6 +18,7 @@ navigator.mediaDevices.getUserMedia(constraints)
     player.srcObject = stream;
   });
 
+// Choose filters
 
 function myFunction() {
    var element = document.getElementById("canvas");
@@ -25,6 +26,8 @@ function myFunction() {
    console.log(filter)
    element.classList.add(filter);
 }
+
+// Choose Text
 function getValue(){
   var query = document.getElementById('in').value;
   console.log(query)
@@ -32,17 +35,39 @@ function getValue(){
   document.getElementById("demo").innerHTML = txt;
 }
 
+// Print the poster
+
 function printDocument(poster) {
-    var x = document.getElementById("hide");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+
+    var y = document.getElementById("headertohide");
+    if (y.style.display === "none") {
+      y.style.display = "block";
     } else {
-      x.style.display = "none";
+      y.style.display = "none";
     }
-    var doc = document.getElementById(poster);
+      var x = document.getElementById("hide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      var z = document.getElementById("buttonhide");
+      if (z.style.display === "none") {
+        z.style.display = "block";
+      } else {
+        z.style.display = "none";
+      }
+
+  //Wait until PDF is ready to print
+
+
 
     //Wait until PDF is ready to print
 
         window.print();
 
 }
+
+
+
